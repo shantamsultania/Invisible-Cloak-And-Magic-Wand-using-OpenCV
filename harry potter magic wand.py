@@ -68,8 +68,8 @@ while True:
 
     gray_frame = new_gray.copy()
     old_pts = new_pts.reshape(-1, 1, 2)
-
-    if cv2.waitKey(1) & 0xff == 27:
+    key = cv2.waitKey(1)
+    if key == 27:
         break
 
 cv2.destroyAllWindows()
