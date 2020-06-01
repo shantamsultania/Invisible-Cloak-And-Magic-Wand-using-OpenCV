@@ -1,6 +1,7 @@
 # Invisible-Cloak-using-OpenCV
 
-This is  one of my OpenCV that is Computer Vision project named in vi . That is inspired from Harry potter Invisible Cloak
+This is  one of my OpenCV that is Computer Vision project named in vi and harry wand. 
+That is inspired from Harry potter Invisible Cloak and maigc wand.
 
 # Developing Environment 
 
@@ -61,11 +62,14 @@ https://www.youtube.com/watch?v=T2ykss_4Af0
 
 3) Download An IDE for the same for reference please see the above code.
 
-4) Run program facelock1.py to create the dataset of your faces.
+4) upload the code and just hit that Run Buttn hard
 
-5) Run program facelock2.py to train the model and see the output.
+4.1) for mgic wand you need to get your item in the get wand window and left click using your mouse on the tip of the item
+item.
 
-6) EUREKA your program is up and running.
+4.2) for Cloak you will need a Red Color and thats it just run the code and place the red color in front of yourself and WOW you are like Gone.....
+
+5) EUREKA your program is up and running.
 
 
 # Resources 
