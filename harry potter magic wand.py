@@ -35,7 +35,7 @@ old_pts = np.array([[x, y]], dtype=np.float32).reshape(-1, 1, 2)
 mask = np.zeros_like(frame)
 
 while True:
-    _, new_frame = cap.read()
+    check, new_frame = cap.read()
     new_frame = cv2.flip(new_frame, 1)
     new_gray = cv2.cvtColor(new_frame, cv2.COLOR_BGR2GRAY)
     new_pts, status, err = cv2.calcOpticalFlowPyrLK(gray_frame,
@@ -48,15 +48,6 @@ while True:
     for i, j in zip(old_pts, new_pts):
         x, y = j.ravel()
         a, b = i.ravel()
-        if cv2.waitKey(2) & 0xff == ord('q'):
-            stp = 1
-
-        elif cv2.waitKey(2) & 0xff == ord('w'):
-            stp = 0
-
-        elif cv2.waitKey(2) == ord('n'):
-            mask = np.zeros_like(new_frame)
-
         if stp == 0:
             mask = cv2.line(mask, (a, b), (x, y), (0, 0, 255), 6)
 
